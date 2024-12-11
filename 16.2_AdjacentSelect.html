@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+           (+) | Adjacent to Element
+        </title>
+        <style>
+            /*****The Sentence that are after Closing tag of div are known as adjacent to div (+)****/
+
+            div > h1 
+            {
+                color: brown;
+            }
+            div+h1 
+            {
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div>            
+            <h1>Hi This is H1</h1>
+            <h1>Hi This is H1</h1>
+        </div>
+        <h1>Hi This is Adjacent to div1</h1>
+            <h1>Hi This not is Adjacent to div1</h1>
+    </body>
+</html>

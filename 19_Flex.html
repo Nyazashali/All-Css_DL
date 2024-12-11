@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Flex Properties</title>
+        <style>
+
+            /*****Flex is the advanced didplay property to produce responsive web design***/
+            :root
+            {
+                --primarycolor: #ff00ff;
+                --secondcolor:#f5588f;
+                --mytextsize : 22px;
+                
+
+            }
+            
+            .container
+             {
+               width: 800px;
+               height: 800px;
+               border: solid 5px var(--primarycolor);
+              
+            }
+
+            .child
+            {
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+                border: solid 3px;
+                color: var(--secondcolor);
+                font-size: var(--mytextsize);
+                
+            }
+
+            .container 
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: flex-start;
+            }
+
+            .child 
+            {
+                flex-grow: 1;
+            }
+
+            .child-3 
+            {
+                flex-basis: 500px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+
+        <div class="child child-1">Chid1</div>
+        <div class="child child-2">Chid2</div>
+        <div class="child child-3">Chid3</div>
+        <div class="child child-4">Chid4</div>
+        <div class="child child-5">Chid5</div>
+        <div class="child child-6">Chid6</div>
+        
+       </div>
+    </body>
+</html>

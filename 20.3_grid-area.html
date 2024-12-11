@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid with Grid Areas</title>
+    <style>
+        :root {
+            --primarycolor: #ff0385;
+            --secondcolor: #f5588f;
+        }
+        
+        .container {
+            height: 600px;
+            width: 600px;
+            border: 3px solid var(--primarycolor);
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+                "child1 child1 . . . ."
+                "child1 child1 child2 child2 . ."
+                ". . child2 child2 . ."
+                "child3 child3 child3 child4 child4 child4"
+                "child3 child3 child3 child4 child4 child4"
+                ". . . . . .";
+        }
+        
+        .child {
+            border: solid 3px var(--secondcolor);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #333;
+        }
+        
+        .child-1 {
+            grid-area: child1;
+            background-color: #ffe0f0;
+        }
+        
+        .child-2 {
+            grid-area: child2;
+            background-color: #ffd1e8;
+        }
+        
+        .child-3 {
+            grid-area: child3;
+            background-color: #ffc1df;
+        }
+        
+        .child-4 {
+            grid-area: child4;
+            background-color: #ffb2d7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child child-1">Child-1</div>
+        <div class="child child-2">Child-2</div>
+        <div class="child child-3">Child-3</div>
+        <div class="child child-4">Child-4</div>
+    </div>
+</body>
+</html>

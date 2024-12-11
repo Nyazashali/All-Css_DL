@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive CSS</title>
+
+        <style>
+            body 
+            {
+                background-color: violet;
+                
+            }
+
+            .mainmenu 
+            {
+                height: 90px;
+                width: 100%;
+                position: fixed;
+                background-color: white;
+                top: 0px;
+                left: 0px;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            .mainmenu > div 
+            {
+                position: relative;
+                float: left;
+                left: 30%;
+                top: 10px;
+                margin: 10px;
+                border-right: 1px solid red;
+                padding-right: 35px;
+                font-family: agency fb;
+            }
+
+            .mainmenu > div:last-child
+            {
+                border-right: 0px solid;
+            }
+
+            .mainmenu > div:hover
+            {
+                background-color: black;
+                color: white;
+            }
+
+            
+
+            @media only screen and (max-width : 800px){
+                body{background-color: blue;}
+
+                .mainmenu
+                {
+                    height: 200px;
+                }
+
+                .mainmenu > div 
+                {
+                    left: 3%;
+                    position: relative;
+                    float: none;
+                    padding-bottom: 8px;
+                    border-bottom: 2px solid #ff00ff;
+                    border-right: none;
+                    width: 70%;
+                }
+            }
+
+            
+                
+        </style>
+    </head>
+    <body>
+        <div class="mainmenu">
+            <div>Home</div>
+            <div>Profile</div>
+            <div>Settings</div>
+            <div>logOut</div>
+
+        </div>
+    </body>
+</html>
