@@ -1,0 +1,8 @@
+Tailwind CSS
+> Tailwind CSS is an opne source CSS framework.
+> Unlike other frameworks, like bootstrap, it does not provide a series of predefined classes for elements and tables. instead, it creates a list of utility Css classes that cane be used to style each elements.
+
+
+To include tailwind in html file, under head tag we need to add CDN.
+CDN -- Content Delivery Network
+<script src="https://cdn.tailwindcss.com"></script>
