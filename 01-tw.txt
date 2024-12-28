@@ -5,4 +5,5 @@ Tailwind CSS
 
 To include tailwind in html file, under head tag we need to add CDN.
 CDN -- Content Delivery Network
+
 <script src="https://cdn.tailwindcss.com"></script>
